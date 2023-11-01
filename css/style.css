@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container .circle {
+    position: absolute;
+    top: -70%;
+    left: -10%;
+}
+
+.container .circle1 {
+    position: absolute;
+    right: -10%;
+    bottom: -90%;
+}
+
+.container .profile-container {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    z-index: 99;
+    background: #fff;
+}
+
+.container .profile-container .cover {
+    background: url("/images/bg-pattern-card.svg");
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+.container .profile-container .main-content {
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+
+.container .profile-container .main-content img {
+    border-radius: 50%;
+    margin-top: -15%;
+    border: 2px solid #fff;
+}
+
+.container .profile-container .main-content .user-info {
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .profile-container .main-content .username {
+    text-align: center;
+}
+
+.container .profile-container .main-content .username .user-info p {
+    font-size: 23px;
+    color: #777;
+}
+
+.container .profile-container .main-content .user-profile {
+    position: relative;
+}
+
+.container .profile-container .main-content .user-profile .user-desc {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.container .profile-container .main-content .user-profile .user-desc .col {
+    text-align: center;
+    font-size: small;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .container .circle {
+    position: absolute;
+        top: -110%;
+        left: -140%;
+    }
+
+    .container .circle1 {
+        position: absolute;
+        right: -140%;
+        bottom: -110%;
+    }
+}
